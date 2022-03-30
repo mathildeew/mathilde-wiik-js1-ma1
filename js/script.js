@@ -29,7 +29,7 @@ heading.innerHTML = "Updated heading";
 heading.style.fontSize = "2em";
 
 // question 4
-heading.classList.add("subheading");
+heading.className = "subheading";
 
 // question 5
 const paragraphs = document.querySelectorAll("p");
@@ -41,7 +41,7 @@ for (let i = 0; i < paragraphs.length; i++) {
 // question 6
 const resultsContainer = document.querySelector(".results");
 
-resultsContainer.innerHTML = `<p>New paragraph</p>`;
+resultsContainer.innerHTML = "<p>New paragraph</p>";
 resultsContainer.style.backgroundColor = "yellow";
 
 // question 7
@@ -54,7 +54,7 @@ function catsName(list) {
 catsName(cats);
 
 // question 8
-function createCats(animal) {
+function createCats(cats) {
   let html = "";
 
   for (let i = 0; i < cats.length; i++) {
@@ -66,7 +66,7 @@ function createCats(animal) {
     }
     html += `<div>
               <h5>${catsName}</h5>
-              <p>${unknownAge}
+              <p>Age: ${unknownAge}
             </div>`;
   }
 
