@@ -59,12 +59,13 @@ function createCats(animal) {
 
   for (let i = 0; i < cats.length; i++) {
     let unknownAge = "Unknown age";
+    let catsName = cats[i].name;
 
     if (cats[i].age) {
       unknownAge = cats[i].age;
     }
     html += `<div>
-              <h5>${cats[i].name}</h5>
+              <h5>${catsName}</h5>
               <p>${unknownAge}
             </div>`;
   }
